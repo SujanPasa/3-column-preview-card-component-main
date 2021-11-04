@@ -116,7 +116,7 @@
 @media screen and (min-width: 1440px) {
 
     .container{
-        min-height: 90vh;
+        min-height: 100vh;
     }
     .box-wrap{
         flex-direction: row;
