@@ -1,0 +1,150 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 1em;
+}
+.heading{
+    font-family:Lexend Deca;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.heading{
+    font-size: 2rem;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.para{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 2em;
+    line-height: 2;
+    /* height: 50%; */
+}
+
+/* 
+.box{
+    border: 1px solid black;
+} */
+
+/* Setting background color */
+.sedan{
+    background-color:hsl(31, 77%, 52%) ;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%) ;
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.box div{
+    margin: 1.5em auto;
+}
+
+.btn{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 1.75em;
+    font-size: 1rem;
+    padding: .8em 1.5em;
+    border:hidden;
+    margin: 1em auto;
+}
+
+/* Button Text Default color Customization */
+
+
+.suvs button{
+    color:hsl(184, 100%, 22%);
+}
+
+.sedan button{
+    color:hsl(31, 77%, 52%);
+ 
+}
+
+.luxury button{
+    color:hsl(179, 100%, 13%);
+}
+
+
+
+
+/* mobile design */
+
+@media screen and (min-width: 375px) {
+    
+    .box-wrap{
+        display:flex;
+        flex-direction: column;
+        width: 95%; 
+        border-radius: .5em;
+        overflow: hidden;   
+    }
+
+    .content-wrap{
+        max-width: 70%;
+        margin:auto;
+
+    }
+ 
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    
+}
+
+/* Desktop Design */
+
+@media screen and (min-width: 1440px) {
+
+    .container{
+        min-height: 90vh;
+    }
+    .box-wrap{
+        flex-direction: row;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    /* Button hover costomization */
+
+    .sedan button:hover{
+        color:hsla(0, 0%, 100%, 0.75);
+        border: 2px solid #ffffff;
+        background-color:hsl(31, 77%, 52%) ;
+    }
+
+    .suvs button:hover{
+        color:hsla(0, 0%, 100%, 0.75);
+        border: 2px solid #ffffff;
+        background-color:hsl(184, 100%, 22%) ;
+    }
+
+    .luxury button:hover{
+        color:hsla(0, 0%, 100%, 0.75);
+        border: 2px solid #ffffff;
+        background-color:hsl(179, 100%, 13%) ;
+    }
+
+
+}
